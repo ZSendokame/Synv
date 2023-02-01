@@ -5,6 +5,7 @@ solves the streaming problem, where you need to have a good resolution, internet
 # Installation
 ```
 git clone https://github.com/ZSendokame/Synv.git
+cd Synv
 pip install -r requirements.txt
 ```
 
