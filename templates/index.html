@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synv</title>
+    <link rel="stylesheet" href="/templates/css/general.css">
+</head>
+<body>
+    <div class="new-room">
+        <div class="room-form" align="center">
+            <form action="/api/create" method="post">
+                <input class="form" name="title" placeholder="Room name">
+                <input class="form" name="embed" placeholder="Room video">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="room-list">
+        {% for room in rooms %}
+            <div class="room">
+                <a class="room-url" href="/room/{{ room }}">{{ rooms[room]['title'] }}</a>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+</body>
+</html>

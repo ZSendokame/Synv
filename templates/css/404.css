@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: 'Itim';
+    background-color: #023E8A;
+    color: white;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+.alert {
+    text-align: center;
+}
