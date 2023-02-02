@@ -43,6 +43,7 @@ input:focus {
 .player {
     display: block;
     position: absolute;
+    border: none;
     left: 5%;
     width: 90%;
     height: 90%;

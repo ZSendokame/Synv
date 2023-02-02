@@ -18,9 +18,9 @@ def room(id):
         if not db.exists(id):
             return render_template('404.html', id=id)
 
-        room_video = db.get(id)
+        room = db.get(id)
 
-    return render_template('room.html', video=room_video['embed'], id=id)
+    return render_template('room.html', video=room['embed'], title=room['title'])
 
 
 @app.post('/api/create')
